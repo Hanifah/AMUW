@@ -1,0 +1,260 @@
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\csc.exe
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\System.Collections.Immutable.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\vbc.exe
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\VBCSCompiler.exe
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\roslyn\VBCSCompiler.exe.config
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\AMUW.dll.config
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\AMUW.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\AMUW.pdb
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Antlr3.Runtime.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\EntityFramework.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\EntityFramework.SqlServer.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Google.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Threading.Tasks.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Web.Infrastructure.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.NetFramework.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Compute.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.MediaServices.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Monitoring.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Network.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Scheduler.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Sql.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Storage.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.WebSites.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Newtonsoft.Json.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Owin.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Net.Http.Extensions.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Net.Http.Primitives.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Helpers.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Mvc.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Optimization.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Razor.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.WebPages.Deployment.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.WebPages.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.WebPages.Razor.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\WebGrease.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Threading.Tasks.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.NetFramework.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Compute.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.MediaServices.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Monitoring.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Network.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Scheduler.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Sql.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Storage.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.WebSites.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Net.Http.Extensions.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Net.Http.Primitives.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Helpers.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Mvc.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Optimization.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.Razor.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.WebPages.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.WebPages.Deployment.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\System.Web.WebPages.Razor.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Antlr3.Runtime.pdb
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Newtonsoft.Json.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\EntityFramework.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\EntityFramework.SqlServer.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Google.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\obj\Debug\AMUW.csproj.App.config
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\obj\Debug\AMUW.csprojResolveAssemblyReference.cache
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\obj\Debug\AMUW.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\obj\Debug\AMUW.pdb
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Hyak.Common.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Azure.Common.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Azure.Common.NetFramework.dll
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Hyak.Common.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Azure.Common.xml
+c:\users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Azure.Common.NetFramework.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\System.Net.Http.Formatting.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\System.Web.Http.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\System.Web.Http.WebHost.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\System.Net.Http.Formatting.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\System.Web.Http.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\System.Web.Http.WebHost.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\AMUW.Data.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\AMUW.Services.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\AutoMapper.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.Net4.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.Web.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\WebActivatorEx.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\AMUW.Data.pdb
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\AMUW.Services.pdb
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\AutoMapper.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.pdb
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.Net4.pdb
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.Web.pdb
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW\bin\StructureMap.Web.xml
+D:\Work\Project\AMUW\AMUW\bin\roslyn\csc.exe
+D:\Work\Project\AMUW\AMUW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Work\Project\AMUW\AMUW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Work\Project\AMUW\AMUW\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Work\Project\AMUW\AMUW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Work\Project\AMUW\AMUW\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Work\Project\AMUW\AMUW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Work\Project\AMUW\AMUW\bin\roslyn\System.Collections.Immutable.dll
+D:\Work\Project\AMUW\AMUW\bin\roslyn\System.Reflection.Metadata.dll
+D:\Work\Project\AMUW\AMUW\bin\roslyn\vbc.exe
+D:\Work\Project\AMUW\AMUW\bin\roslyn\VBCSCompiler.exe
+D:\Work\Project\AMUW\AMUW\bin\roslyn\VBCSCompiler.exe.config
+D:\Work\Project\AMUW\AMUW\bin\AMUW.dll.config
+D:\Work\Project\AMUW\AMUW\bin\AMUW.dll
+D:\Work\Project\AMUW\AMUW\bin\AMUW.pdb
+D:\Work\Project\AMUW\AMUW\bin\AMUW.Data.dll
+D:\Work\Project\AMUW\AMUW\bin\AMUW.Services.dll
+D:\Work\Project\AMUW\AMUW\bin\Antlr3.Runtime.dll
+D:\Work\Project\AMUW\AMUW\bin\AutoMapper.dll
+D:\Work\Project\AMUW\AMUW\bin\EntityFramework.dll
+D:\Work\Project\AMUW\AMUW\bin\EntityFramework.SqlServer.dll
+D:\Work\Project\AMUW\AMUW\bin\Hyak.Common.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Azure.Common.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Azure.Common.NetFramework.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Google.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Threading.Tasks.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Web.Infrastructure.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.NetFramework.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Compute.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.MediaServices.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Monitoring.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Network.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Scheduler.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Sql.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Storage.dll
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.WebSites.dll
+D:\Work\Project\AMUW\AMUW\bin\Newtonsoft.Json.dll
+D:\Work\Project\AMUW\AMUW\bin\Owin.dll
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.dll
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.Net4.dll
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.Web.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Net.Http.Extensions.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Net.Http.Formatting.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Net.Http.Primitives.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Helpers.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Http.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Http.WebHost.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Mvc.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Optimization.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Razor.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.WebPages.Deployment.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.WebPages.dll
+D:\Work\Project\AMUW\AMUW\bin\System.Web.WebPages.Razor.dll
+D:\Work\Project\AMUW\AMUW\bin\WebActivatorEx.dll
+D:\Work\Project\AMUW\AMUW\bin\WebGrease.dll
+D:\Work\Project\AMUW\AMUW\bin\AMUW.Data.pdb
+D:\Work\Project\AMUW\AMUW\bin\AMUW.Services.pdb
+D:\Work\Project\AMUW\AMUW\bin\AutoMapper.xml
+D:\Work\Project\AMUW\AMUW\bin\Hyak.Common.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Azure.Common.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Azure.Common.NetFramework.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Threading.Tasks.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Common.NetFramework.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Compute.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.MediaServices.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Monitoring.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Network.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Scheduler.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Sql.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.Storage.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.WindowsAzure.Management.WebSites.xml
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.pdb
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.xml
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.Net4.pdb
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.Web.pdb
+D:\Work\Project\AMUW\AMUW\bin\StructureMap.Web.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Net.Http.Extensions.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Net.Http.Formatting.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Net.Http.Primitives.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Http.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Http.WebHost.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Helpers.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Mvc.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Optimization.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.Razor.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.WebPages.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.WebPages.Deployment.xml
+D:\Work\Project\AMUW\AMUW\bin\System.Web.WebPages.Razor.xml
+D:\Work\Project\AMUW\AMUW\bin\Antlr3.Runtime.pdb
+D:\Work\Project\AMUW\AMUW\bin\Newtonsoft.Json.xml
+D:\Work\Project\AMUW\AMUW\bin\EntityFramework.xml
+D:\Work\Project\AMUW\AMUW\bin\EntityFramework.SqlServer.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Google.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Work\Project\AMUW\AMUW\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Work\Project\AMUW\AMUW\obj\Debug\AMUW.csproj.App.config
+D:\Work\Project\AMUW\AMUW\obj\Debug\AMUW.csprojResolveAssemblyReference.cache
+D:\Work\Project\AMUW\AMUW\obj\Debug\AMUW.dll
+D:\Work\Project\AMUW\AMUW\obj\Debug\AMUW.pdb

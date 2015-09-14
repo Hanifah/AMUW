@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
+}
+
+<h2>Index</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <table id="vmlist"></table>
+    </div>
+</div>
+<footer>
+    <div class="action col-lg-12" style="display:none">
+        <button class="btn btn-primary execute-vm" onclick="executeVm()"></button>
+        <button class="btn btn-primary detail-vm" onclick="detailVm()">Detail</button>
+        @if (ViewBag.UserId == null)
+        {
+            <button class="btn btn-primary assign-vm" onclick="loadAssign()">Assign VM</button>
+        }
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="modalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary assign-vm" onclick="assignVm()">Assign</button>
+            </div>
+        </div>
+
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            loadVm();
+        });
+        var vm = {};
+
+        function loadVm() {
+            var urlApi = '/api/virtualmachineapi/get';
+            @if (ViewBag.UserId != null) {
+                <text>urlApi = '/api/virtualmachineapi/@ViewBag.UserId';</text>
+            }
+
+            $.ajax({
+                url: urlApi,
+                type: 'GET',
+                contentType: 'application/json',
+                beforeSend: function () {
+                    indicator.showPleaseWait();
+                }
+            })
+            .done(function (data) {
+                var grid = $('#vmlist').grid({
+                    dataSource: data,
+                    uiLibrary: 'bootstrap',
+                    autoLoad: false,
+                    dataKey: 'Name',
+                    columns: [
+                        { field: 'Name', title: 'Name', sortable: true },
+                        { field: 'Status', title: 'Status' },
+                        { field: 'Location', title: 'Location' },
+                        { field: 'DnsName', title: 'DNS Name' },
+                        { field: 'ServiceName', title: 'Service Name' },
+                        { field: 'DeploymentName', title: 'Deployment Name' },
+                        //{ field: 'Assign User', events: { 'click': function (e) { assignUser(e.data.record.Execute); } } }
+                    ],
+                });
+                grid.on('rowSelect', function (e, $row, id, record) {
+                    var action = '';
+                    if (record['Status'] == 'Stopped') {
+                        action = 'start';
+                        $('.execute-vm').text('Start');
+                    }
+                    else {
+                        action = 'shutdown';
+                        $('.execute-vm').text('Shut down');
+                    }
+                    vm = {
+                        RoleName: record['Name'],
+                        ServiceName: record['ServiceName'],
+                        DeploymentName: record['DeploymentName'],
+                        Action: action
+                    };
+                    $('.action').show();
+                });
+
+                grid.hideColumn("ServiceName");
+                grid.hideColumn("DeploymentName");
+                grid.reload();
+                indicator.hidePleaseWait();
+            })
+            .fail(function () {
+                alert("error");
+            });
+        }
+
+        function executeVm(val) {
+            var dataVm = JSON.stringify(vm);
+
+            $.ajax({
+                url: '/api/virtualmachineapi/execute',
+                data: dataVm,
+                type: 'POST',
+                contentType: 'application/json',
+                beforeSend: function () {
+                    indicator.showPleaseWait();
+                }
+            })
+            .done(function (data) {
+                indicator.hidePleaseWait();
+            })
+            .fail(function () {
+                indicator.hidePleaseWait();
+                alert("error");
+            });
+        }
+
+        function loadAssign() {
+            $.ajax({
+                url: '@Url.Action("GetUsers", "VirtualMachine")',
+                type: 'POST',
+                contentType: 'application/json',
+                success: function (data) {
+                    $('#modalDialog').find('.modal-body').html(data);
+                    $('#modalDialog').modal('show');
+                }
+            });
+        }
+
+        function assignVm(val) {
+            var dataVm = JSON.stringify(vm);
+            var userId = $('#UserId').val();
+            $.ajax({
+                url: '@Url.Action("AssignVM", "VirtualMachine")/' + userId,
+                data: dataVm,
+                type: 'POST',
+                contentType: 'application/json',
+                beforeSend: function () {
+                    indicator.showPleaseWait();
+                },
+                success: function (data) {
+                    alert(data);
+                    indicator.hidePleaseWait();
+                    $('#modalDialog').modal('hide');
+                }
+            });
+        }
+
+        var indicator = (function () {
+            var pleaseWaitDiv = $('<div class="processing in" aria-hidden="false" style="position: fixed;top: 50%;left: 50%;z-index: 10900;background-color: white;display: block;width: 100px;height: 50px;color: black;padding-top: 15px;padding-left: 10px;">Processing...</div>');
+            return {
+                showPleaseWait: function () {
+                    pleaseWaitDiv.modal();
+                },
+                hidePleaseWait: function () {
+                    pleaseWaitDiv.modal('hide');
+                },
+
+            };
+        })();
+
+        function detailVm()
+        {
+            var dataVm = JSON.stringify(vm);
+            var obj = JSON.parse(dataVm);
+            window.location.href = '@Url.Action("Detail", "VirtualMachine")?RoleName=' + obj.RoleName + '&ServiceName=' + obj.ServiceName + '&DeploymentName=' + obj.DeploymentName;
+        }
+    </script>
+}
+
+

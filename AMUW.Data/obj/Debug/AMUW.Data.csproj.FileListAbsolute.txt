@@ -1,0 +1,10 @@
+c:\Users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\AMUW.Data.dll
+c:\Users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\AMUW.Data.pdb
+c:\Users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW.Data\obj\Debug\AMUW.Data.dll
+c:\Users\hanifahnurafifah\documents\visual studio 2015\Projects\AMUW\AMUW.Data\obj\Debug\AMUW.Data.pdb
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\AMUW.Data.dll.config
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\EntityFramework.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\EntityFramework.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Data\obj\Debug\AMUW.Data.csprojResolveAssemblyReference.cache

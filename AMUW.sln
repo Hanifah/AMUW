@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMUW", "AMUW\AMUW.csproj", "{E620353E-2333-433C-A541-B3C7E04A6152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMUW.Services", "AMUW.Services\AMUW.Services.csproj", "{42D4B263-DEDD-47FD-9DF1-219B513B9FF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMUW.Data", "AMUW.Data\AMUW.Data.csproj", "{F5402922-B8CC-4C17-8424-099FBB5985EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E620353E-2333-433C-A541-B3C7E04A6152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E620353E-2333-433C-A541-B3C7E04A6152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E620353E-2333-433C-A541-B3C7E04A6152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E620353E-2333-433C-A541-B3C7E04A6152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D4B263-DEDD-47FD-9DF1-219B513B9FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D4B263-DEDD-47FD-9DF1-219B513B9FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D4B263-DEDD-47FD-9DF1-219B513B9FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D4B263-DEDD-47FD-9DF1-219B513B9FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5402922-B8CC-4C17-8424-099FBB5985EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5402922-B8CC-4C17-8424-099FBB5985EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5402922-B8CC-4C17-8424-099FBB5985EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5402922-B8CC-4C17-8424-099FBB5985EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
