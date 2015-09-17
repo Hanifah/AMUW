@@ -16,5 +16,6 @@ namespace AMUW.ViewModels
         public string Size { get; set; }
         public string Location { get; set; }
         public string DeploymentId { get; set; }
+        public List<string> UserList { get; set; } 
     }
 }

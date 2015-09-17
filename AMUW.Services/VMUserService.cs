@@ -18,5 +18,10 @@ namespace AMUW.Services
         {
             return DataContext.VMUsers.Where(x => x.UserId == id).ToList();    
         }
-    }
+
+        public List<VMUser> GetByVMName(string vmName)
+        {
+            return DataContext.VMUsers.Where(x => x.VMName == vmName).ToList();
+        }
+     }
 }

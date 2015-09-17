@@ -1,8 +1,36 @@
-﻿
+﻿@model AMUW.ViewModels.VirtualMachineDetailViewModel
 @{
     ViewBag.Title = "Detail";
     Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
 }
 
 <h2>Detail</h2>
-
+<div class="row">
+    <div class="col-lg-3">Name</div>
+    <div class="col-lg-9">@Model.RoleName</div>
+</div>
+<div class="row">
+    <div class="col-lg-3">Deployment Id</div>
+    <div class="col-lg-9">@Model.DeploymentId</div>
+</div>
+<div class="row">
+    <div class="col-lg-3">Status</div>
+    <div class="col-lg-9">@Model.Status</div>
+</div>
+<div class="row">
+    <div class="col-lg-3">Public Virtual IP (VIP) Address</div>
+    <div class="col-lg-9">@Model.VirtualIP</div>
+</div>
+<div class="row">
+    <div class="col-lg-3">Internal IP Address</div>
+    <div class="col-lg-9">@Model.InternalIP</div>
+</div>
+<div class="row">
+    <div class="col-lg-3">User List</div>
+    <div class="col-lg-9">
+        @foreach (var item in Model.UserList)
+        {
+            <p>@item</p><br/>
+        }
+    </div>
+</div>
