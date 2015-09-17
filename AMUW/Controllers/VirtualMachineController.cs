@@ -50,13 +50,21 @@ namespace AMUW.Controllers
         [HttpPost]
         public JsonResult AssignVM(ExecuteVM executeVm, int id)
         {
-            var assignVm = new VMUser();
-            assignVm.UserId = id;
-            assignVm.ServiceName = executeVm.ServiceName;
-            assignVm.DeploymentName = executeVm.DeploymentName;
-            assignVm.VMName = executeVm.RoleName;
-            _vmUserService.AssignUserToVM(assignVm);
-            return Json("Success");
+            var check = _vmUserService.CheckUser(id, executeVm.RoleName);
+            if (!check)
+            {
+                var assignVm = new VMUser();
+                assignVm.UserId = id;
+                assignVm.ServiceName = executeVm.ServiceName;
+                assignVm.DeploymentName = executeVm.DeploymentName;
+                assignVm.VMName = executeVm.RoleName;
+                _vmUserService.AssignUserToVM(assignVm);
+                return Json("Success");
+            }
+            else
+            {
+                return Json("This user already has " + executeVm.RoleName);
+            }
         }
 
         public async Task<ActionResult> Detail(ExecuteVM executeVm)

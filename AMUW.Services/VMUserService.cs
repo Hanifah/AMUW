@@ -14,6 +14,11 @@ namespace AMUW.Services
             DataContext.SaveChanges();
         }
 
+        public bool CheckUser(int userId, string vmName)
+        {
+            return DataContext.VMUsers.Any(x => x.UserId == userId && x.VMName == vmName);
+        }
+
         public List<VMUser> GetAll(int id)
         {
             return DataContext.VMUsers.Where(x => x.UserId == id).ToList();    

@@ -12,5 +12,6 @@ namespace AMUW.Services.Interfaces
         void AssignUserToVM(VMUser vmUser);
         List<VMUser> GetAll(int id);
         List<VMUser> GetByVMName(string vmName);
+        bool CheckUser(int userId, string vmName);
      }
 }
