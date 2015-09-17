@@ -10,4 +10,9 @@ namespace AMUW.ViewModels
         public string UserId { get; set; }
         public string Username { get; set; }
     }
+
+    public class BaseUserViewModel
+    {
+        public string UserRole { get; set; }
+    }
 }

@@ -16,7 +16,7 @@ namespace AMUW.ViewModels
         public string DnsName { get; set; }
     }
 
-    public class ExecuteVM
+    public class ExecuteVM : BaseUserViewModel
     {
         public string ServiceName { get; set; }
         public string DeploymentName { get; set; }

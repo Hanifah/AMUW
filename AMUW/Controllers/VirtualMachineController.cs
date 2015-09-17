@@ -79,6 +79,7 @@ namespace AMUW.Controllers
                 var emailAddress = UserManager.FindById(item.User.UserId).Email;
                 viewModel.UserList.Add(item.User.Username + "(" + emailAddress +")");
             }
+            viewModel.UserRole = AMUW.Helpers.AMUWHelper.GetRole();
             return View(viewModel);
         }
 

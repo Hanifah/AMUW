@@ -5,7 +5,7 @@ using System.Web;
 
 namespace AMUW.ViewModels
 {
-    public class VirtualMachineDetailViewModel
+    public class VirtualMachineDetailViewModel : BaseUserViewModel
     {
         public string Status { get; set; }
         public string DnsName { get; set; }

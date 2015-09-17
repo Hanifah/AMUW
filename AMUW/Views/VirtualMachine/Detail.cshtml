@@ -25,12 +25,16 @@
     <div class="col-lg-3">Internal IP Address</div>
     <div class="col-lg-9">@Model.InternalIP</div>
 </div>
-<div class="row">
-    <div class="col-lg-3">User List</div>
-    <div class="col-lg-9">
-        @foreach (var item in Model.UserList)
-        {
-            <p>@item</p><br/>
-        }
+@if (Model.UserRole == "Administrator")
+{
+    <div class="row">
+        <div class="col-lg-3">User List</div>
+        <div class="col-lg-9">
+            @foreach (var item in Model.UserList)
+            {
+                <p>@item</p><br />
+            }
+        </div>
     </div>
-</div>
+}
+
