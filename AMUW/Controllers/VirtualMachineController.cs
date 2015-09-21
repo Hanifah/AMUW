@@ -1,26 +1,21 @@
-﻿using AMUW.AutoMapper;
-using AMUW.Data.Model;
+﻿using AMUW.Data.Model;
 using AMUW.Services.Interfaces;
 using AMUW.ViewModels;
 using System.Linq;
 using System.Web.Mvc;
-using System.Web.Security;
 using Microsoft.AspNet.Identity;
-using System.Net.Http;
-using System;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using AMUW.Helpers;
 using Microsoft.WindowsAzure;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Web.Configuration;
 
 namespace AMUW.Controllers
 {
     [Authorize]
     public class VirtualMachineController : BaseController
     {
-        public const string base64EncodedCertificate = "";
-        public const string subscriptionId = "";
         private readonly IUserService _userService;
         private readonly IVMUserService _vmUserService;
 
@@ -36,6 +31,13 @@ namespace AMUW.Controllers
             {
                 string currentUserId = User.Identity.GetUserId();
                 ViewBag.UserId = _userService.GetId(currentUserId);
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(AMUWHelper.GetAppSetting("Azure-SubscriptionId")) || string.IsNullOrEmpty(AMUWHelper.GetAppSetting("Azure-Credential")))
+                {
+                    return RedirectToAction("Settings");
+                }
             }
             return View();
         }
@@ -69,7 +71,7 @@ namespace AMUW.Controllers
 
         public async Task<ActionResult> Detail(ExecuteVM executeVm)
         {
-            var credential = CertificateAuthenticationHelper.GetCredential(subscriptionId, base64EncodedCertificate);
+            var credential = CertificateAuthenticationHelper.GetCredential(AMUWHelper.GetAppSetting("Azure-SubscriptionId"), AMUWHelper.GetAppSetting("Azure-Credential"));
             var cloudService = await CloudContext.Clients.CreateComputeManagementClient(credential).HostedServices.GetDetailedAsync(executeVm.ServiceName);
             var deployment = cloudService.Deployments.FirstOrDefault();
             var vmDetail = deployment.RoleInstances.FirstOrDefault(x => x.RoleName == executeVm.RoleName);
@@ -91,5 +93,29 @@ namespace AMUW.Controllers
             return View(viewModel);
         }
 
+        public ActionResult Settings()
+        {
+            var viewModel = new SettingViewModel();
+            viewModel.SubscriptionId = AMUWHelper.GetAppSetting("Azure-SubscriptionId");
+            viewModel.Credential = AMUWHelper.GetAppSetting("Azure-Credential");
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Settings(SettingViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                Configuration webConfigApp = WebConfigurationManager.OpenWebConfiguration("~");
+                //Modifying the AppKey from AppValue to SubscriptionId and Credential
+                webConfigApp.AppSettings.Settings["Azure-SubscriptionId"].Value = viewModel.SubscriptionId;
+                webConfigApp.AppSettings.Settings["Azure-Credential"].Value = viewModel.Credential;
+                //Save the Modified settings of AppSettings.
+                webConfigApp.Save();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }

@@ -290,7 +290,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\VirtualMachineApiController.cs" />
     <Compile Include="Controllers\VirtualMachineController.cs" />
-    <Compile Include="Controllers\VMUserApiController.cs" />
+    <Compile Include="Controllers\VirtualMachineOperationController.cs" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -304,6 +304,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\SettingViewModel.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="ViewModels\VirtualMachineDetailViewModel.cs" />
     <Compile Include="ViewModels\VirtualMachineViewModel.cs" />
@@ -331,7 +332,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -369,6 +372,7 @@
     <Content Include="Views\VirtualMachine\_UserList.cshtml" />
     <Content Include="Views\Shared\_LayoutLoggedIn.cshtml" />
     <Content Include="Views\VirtualMachine\Detail.cshtml" />
+    <Content Include="Views\VirtualMachine\Settings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

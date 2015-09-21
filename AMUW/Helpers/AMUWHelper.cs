@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 
@@ -32,6 +33,11 @@ namespace AMUW.Helpers
             var role = userRole.FindById(currentUser.Roles.FirstOrDefault(x => x.UserId == currentUser.Id).RoleId).Name;
 
             return role;
+        }
+
+        public static string GetAppSetting(string settingKey)
+        {
+            return ConfigurationManager.AppSettings[settingKey];
         }
     }
 }

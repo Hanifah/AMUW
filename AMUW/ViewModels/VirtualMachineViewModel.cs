@@ -29,4 +29,9 @@ namespace AMUW.ViewModels
         public IList<SelectListItem> Users { get; set; }
         public int UserId { get; set; }
     }
+
+    public class ListExecuteVM
+    {
+        public List<ExecuteVM> ExecuteVM { get; set; }
+    }
 }
