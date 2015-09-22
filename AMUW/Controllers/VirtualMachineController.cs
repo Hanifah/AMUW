@@ -10,9 +10,6 @@ using Microsoft.WindowsAzure;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Web.Configuration;
-using System.Net.Http;
-using System;
-using System.Net.Http.Headers;
 
 namespace AMUW.Controllers
 {

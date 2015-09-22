@@ -14,6 +14,7 @@ namespace AMUW.ViewModels
         public string Status { get; set; }
         public string Location { get; set; }
         public string DnsName { get; set; }
+        public string UserList { get; set; }
     }
 
     public class ExecuteVM : BaseUserViewModel

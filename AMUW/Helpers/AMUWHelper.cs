@@ -39,5 +39,11 @@ namespace AMUW.Helpers
         {
             return ConfigurationManager.AppSettings[settingKey];
         }
+
+        public string GetEmail(string userId)
+        {
+            ApplicationUserManager userManager = new ApplicationUserManager(new UserStore<ApplicationUser>());
+            return userManager.FindById(userId).Email;
+        }
     }
 }

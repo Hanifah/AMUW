@@ -1,5 +1,4 @@
-﻿using AMUW.AutoMapper;
-using AMUW.Helpers;
+﻿using AMUW.Helpers;
 using AMUW.Services.Interfaces;
 using AMUW.ViewModels;
 using Microsoft.WindowsAzure;
@@ -10,17 +9,19 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Xml.Linq;
+using Microsoft.AspNet.Identity;
 
 namespace AMUW.Controllers
 {
     public class VirtualMachineApiController : ApiController
     {
         private readonly IVMUserService _vmUserService;
+        private readonly AMUWHelper _helper;
 
-        public VirtualMachineApiController(IVMUserService vmUserService)
+        public VirtualMachineApiController(IVMUserService vmUserService, AMUWHelper helper)
         {
             _vmUserService = vmUserService;
+            _helper = helper;
         }
 
         [HttpGet]
@@ -70,6 +71,13 @@ namespace AMUW.Controllers
                         var roleInstances = deployment.RoleInstances;
                         foreach (var roleInstance in roleInstances)
                         {
+                            var userVmList = _vmUserService.GetByVMName(roleInstance.RoleName);
+                            var userList = new List<string>();
+                            foreach (var item in userVmList)
+                            {
+                                var emailAddress = _helper.GetEmail(item.User.UserId);
+                                userList.Add(item.User.Username + "(" + emailAddress + ")");
+                            }
                             vms.Add(new VirtualMachineViewModel
                             {
                                 ServiceName = cloudService.ServiceName,
@@ -77,7 +85,8 @@ namespace AMUW.Controllers
                                 Name = roleInstance.RoleName,
                                 Status = roleInstance.PowerState.ToString(),
                                 DnsName = deployment.Uri.ToString(),
-                                Location = cloudService.Properties.Location != null ? resourceLocation : cloudService.Properties.AffinityGroup + " (" + resourceLocation + ")"
+                                Location = cloudService.Properties.Location != null ? resourceLocation : cloudService.Properties.AffinityGroup + " (" + resourceLocation + ")",
+                                UserList = userList.Count > 0 ? string.Join("<br/>", userList) : string.Empty
                             });
                         }
                     }

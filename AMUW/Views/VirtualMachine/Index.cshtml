@@ -15,7 +15,7 @@
         <table id="vmlist" class="table table-responsive" style="width:100%"></table>
     </div>
 </div>
-<br/>
+<br />
 <footer>
     <div class="action col-lg-12" style="display:none">
         <button class="btn btn-primary execute-vm" onclick="executeVm()"></button>
@@ -58,15 +58,14 @@
         function loadVm() {
             var urlApi = '/api/virtualmachineapi/get';
             @if (ViewBag.UserId != null) {
-                <text>urlApi = '/api/virtualmachineapi/@ViewBag.UserId';</text>
-            }
+                <text>urlApi = '/api/virtualmachineapi/@ViewBag.UserId';
             var grid = $('#vmlist').grid({
                 dataSource: urlApi,
                 uiLibrary: 'bootstrap',
                 autoLoad: false,
                 dataKey: 'Name',
                 columns: [
-                    { field: 'Name', title: 'Name', sortable: true, width:290 },
+                        { field: 'Name', title: 'Name', sortable: true, width: 290 },
                     { field: 'Status', title: 'Status', width: 290 },
                     { field: 'Location', title: 'Location', width: 290 },
                     { field: 'DnsName', title: 'DNS Name', width: 290 },
@@ -97,6 +96,51 @@
             grid.hideColumn("ServiceName");
             grid.hideColumn("DeploymentName");
             grid.reload();
+            </text>
+            }
+            else
+            {
+                <text>
+            var grid = $('#vmlist').grid({
+                dataSource: urlApi,
+                uiLibrary: 'bootstrap',
+                autoLoad: false,
+                dataKey: 'Name',
+                columns: [
+                        { field: 'Name', title: 'Name', sortable: true, width: 230 },
+                    { field: 'Status', title: 'Status', width: 230 },
+                    { field: 'Location', title: 'Location', width: 230 },
+                    { field: 'DnsName', title: 'DNS Name', width: 230 },
+                    { field: 'ServiceName', title: 'Service Name', width: 230 },
+                    { field: 'DeploymentName', title: 'Deployment Name', width: 230 },
+                    { field: 'UserList', title: 'User', width: 230 },
+                    //{ field: 'Assign User', events: { 'click': function (e) { assignUser(e.data.record.Execute); } } }
+                ],
+            });
+            grid.on('rowSelect', function (e, $row, id, record) {
+                var action = '';
+                if (record['Status'] == 'Stopped') {
+                    action = 'start';
+                    $('.execute-vm').text('Start');
+                }
+                else {
+                    action = 'shutdown';
+                    $('.execute-vm').text('Shut down');
+                }
+                vm = {
+                    RoleName: record['Name'],
+                    ServiceName: record['ServiceName'],
+                    DeploymentName: record['DeploymentName'],
+                    Action: action
+                };
+                $('.action').show();
+            });
+
+            grid.hideColumn("ServiceName");
+            grid.hideColumn("DeploymentName");
+            grid.reload();
+            </text>
+            }
         }
 
         function executeVm(val) {

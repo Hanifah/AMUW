@@ -173,7 +173,7 @@ namespace AMUW.Controllers
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
                     var newUser = new UserViewModel { UserId = userID, Username = model.Username};
                     _userService.Register(newUser.MapTo<User>());
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "VirtualMachine");
                 }
                 AddErrors(result);
             }
@@ -402,7 +402,7 @@ namespace AMUW.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "VirtualMachine");
         }
 
         //
@@ -473,7 +473,7 @@ namespace AMUW.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "VirtualMachine");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
