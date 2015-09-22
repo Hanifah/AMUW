@@ -16,7 +16,6 @@ namespace AMUW.Data.Model
         public int Id { get; set; }
         public string Username { get; set; }
         public string UserId { get; set; }
-
-        public string ChangeModel { get; set; }
+        //public string ChangeModel { get; set; }
     }
 }

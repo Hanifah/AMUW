@@ -1,6 +1,7 @@
 ﻿using AMUW.App_Start;
 using AMUW.AutoMapper;
 using AMUW.Data.Installer;
+using AMUW.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -23,6 +24,7 @@ namespace AMUW
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfiguration.Configure();
+            Database.SetInitializer<ApplicationDbContext>(new ApplicationDbContext.DropCreateAlwaysInitializer());
             Database.SetInitializer(new DataInitializer());
         }
     }

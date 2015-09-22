@@ -29,5 +29,28 @@ namespace AMUW.Models
         {
             return new ApplicationDbContext();
         }
+        public class DropCreateAlwaysInitializer : DropCreateDatabaseAlways<ApplicationDbContext>
+        {
+            protected override void Seed(ApplicationDbContext context)
+            {
+                ApplicationUserManager userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(context));
+                var rm = new RoleManager<IdentityRole>(
+                     new RoleStore<IdentityRole>(context));
+                var adminRole = rm.Create(new IdentityRole("Administrator"));
+                var userRole = rm.Create(new IdentityRole("User"));
+
+                ApplicationUser user = new ApplicationUser();
+                PasswordHasher passwordHasher = new PasswordHasher();
+
+                user.UserName = "admin@amuw.com";
+                user.Email = "admin@amuw.com";
+                user.Id = "da7ae7ea-be5b-4c12-98bc-7c78d4665ed0";
+
+                IdentityResult result = userManager.Create(user, "Amuw2015!");
+
+                userManager.AddToRole(user.Id, "Administrator");
+                base.Seed(context);
+            }
+        }
     }
 }

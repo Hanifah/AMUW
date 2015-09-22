@@ -11,7 +11,8 @@ namespace AMUW.Controllers
 {
     public class VirtualMachineOperationController : ApiController
     {
-        public async Task<HttpResponseMessage> Get([FromBody]List<ExecuteVM> vms)
+        [HttpGet]
+        public async Task<HttpResponseMessage> Get(IEnumerable<ExecuteVM> vms)
         {
             var credential = CertificateAuthenticationHelper.GetCredential(AMUWHelper.GetAppSetting("Azure-SubscriptionId"), AMUWHelper.GetAppSetting("Azure-Credential"));
             if (vms != null)

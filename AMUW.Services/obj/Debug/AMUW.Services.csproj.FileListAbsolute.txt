@@ -34,3 +34,39 @@ C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Servic
 C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Services\bin\Debug\StructureMap.pdb
 C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Services\bin\Debug\StructureMap.xml
 C:\Users\HanifahNurafifah\Documents\Visual Studio 2015\Projects\AMUW\AMUW.Services\bin\Debug\StructureMap.Net4.pdb
+D:\Work\Project\AMUW\AMUW.Services\obj\Debug\AMUW.Services.csproj.App.config
+D:\Work\Project\AMUW\AMUW.Services\obj\Debug\AMUW.Services.csprojResolveAssemblyReference.cache
+D:\Work\Project\AMUW\AMUW.Services\obj\Debug\AMUW.Services.dll
+D:\Work\Project\AMUW\AMUW.Services\obj\Debug\AMUW.Services.pdb
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\AMUW.Services.dll.config
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\AMUW.Services.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\AMUW.Services.pdb
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\AMUW.Data.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\EntityFramework.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Hyak.Common.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Azure.Common.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Azure.Common.NetFramework.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\StructureMap.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\StructureMap.Net4.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\System.Net.Http.Extensions.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\System.Net.Http.Primitives.dll
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\AMUW.Data.pdb
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\EntityFramework.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Hyak.Common.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Azure.Common.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Azure.Common.NetFramework.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\StructureMap.pdb
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\StructureMap.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\StructureMap.Net4.pdb
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\System.Net.Http.Extensions.xml
+D:\Work\Project\AMUW\AMUW.Services\bin\Debug\System.Net.Http.Primitives.xml

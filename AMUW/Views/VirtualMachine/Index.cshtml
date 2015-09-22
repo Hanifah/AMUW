@@ -1,15 +1,21 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Virtual Machine List";
     Layout = "~/Views/Shared/_LayoutLoggedIn.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Virtual Machine List</h2>
+<div class="row">
+    <div class="alert alert-warning alert-dismissible notification" role="alert" style="display:none">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+</div>
 <div class="row">
     <div class="col-lg-12">
         <table id="vmlist" class="table table-responsive" style="width:100%"></table>
     </div>
 </div>
+<br/>
 <footer>
     <div class="action col-lg-12" style="display:none">
         <button class="btn btn-primary execute-vm" onclick="executeVm()"></button>
@@ -60,12 +66,12 @@
                 autoLoad: false,
                 dataKey: 'Name',
                 columns: [
-                    { field: 'Name', title: 'Name', sortable: true },
-                    { field: 'Status', title: 'Status' },
-                    { field: 'Location', title: 'Location' },
-                    { field: 'DnsName', title: 'DNS Name' },
-                    { field: 'ServiceName', title: 'Service Name' },
-                    { field: 'DeploymentName', title: 'Deployment Name' },
+                    { field: 'Name', title: 'Name', sortable: true, width:290 },
+                    { field: 'Status', title: 'Status', width: 290 },
+                    { field: 'Location', title: 'Location', width: 290 },
+                    { field: 'DnsName', title: 'DNS Name', width: 290 },
+                    { field: 'ServiceName', title: 'Service Name', width: 290 },
+                    { field: 'DeploymentName', title: 'Deployment Name', width: 290 },
                     //{ field: 'Assign User', events: { 'click': function (e) { assignUser(e.data.record.Execute); } } }
                 ],
             });
@@ -95,24 +101,32 @@
 
         function executeVm(val) {
             var dataVm = JSON.stringify(vm);
-
+            var status = vm.Action;
+            var vmName = vm.RoleName;
             $.ajax({
                 url: '/api/virtualmachineapi/execute',
                 data: dataVm,
                 type: 'POST',
                 contentType: 'application/json',
-                //beforeSend: function () {
-                //    indicator.showPleaseWait();
-                //}
+                beforeSend: function () {
+                    $('.notification-text').remove();
+
+                    if (status == 'start') {
+                        $('<span class="notification-text">Starting ' + vmName + '</span>').appendTo('.notification');
+                    }
+                    else {
+                        $('<span class="notification-text">Stopping ' + vmName + '</span>').appendTo('.notification');
+                    }
+                    $('.notification').show();
+                }
             })
             .done(function (data) {
-                //indicator.hidePleaseWait();
-                loadVm();
-                //vmExecuted.push(vm);
-                //getStatusVm();
+                setTimeout(function () {
+                    $('.notification').hide();
+                    loadVm();
+                }, 5000);
             })
             .fail(function () {
-                //indicator.hidePleaseWait();
                 alert("error");
             });
         }
@@ -161,23 +175,19 @@
             };
         })();
 
-        function detailVm()
-        {
+        function detailVm() {
             var dataVm = JSON.stringify(vm);
             var obj = JSON.parse(dataVm);
             window.location.href = '@Url.Action("Detail", "VirtualMachine")?RoleName=' + obj.RoleName + '&ServiceName=' + obj.ServiceName + '&DeploymentName=' + obj.DeploymentName;
         }
 
-        function getStatusVm()
-        {
-            var vmList = { vms: vmExecuted };
-           
+        function getStatusVm() {
+            var vms = JSON.stringify(vmExecuted);
             $.ajax({
                 type: 'GET',
-                contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify(vmList),
+                dataType: 'json',
+                data: vms,
                 url: '/api/virtualmachineoperation',
-                dataType: 'jsonp',
                 success: function (data) {
                     //console.log(data);
                     //loadVm();

@@ -23,10 +23,12 @@ namespace AMUW.Controllers
             _vmUserService = vmUserService;
         }
 
+        [HttpGet]
         public async Task<HttpResponseMessage> Get(int? id)
         {
             List<VirtualMachineViewModel> vms = new List<VirtualMachineViewModel>();
             var credential = CertificateAuthenticationHelper.GetCredential(AMUWHelper.GetAppSetting("Azure-SubscriptionId"), AMUWHelper.GetAppSetting("Azure-Credential"));
+
             var cloudServiceList = new List<string>();
             if (id != null)
             {
