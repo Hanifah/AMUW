@@ -29,7 +29,7 @@ namespace AMUW.Models
         {
             return new ApplicationDbContext();
         }
-        public class DropCreateAlwaysInitializer : DropCreateDatabaseAlways<ApplicationDbContext>
+        public class DropCreateAlwaysInitializer : DropCreateDatabaseIfModelChanges<ApplicationDbContext>
         {
             protected override void Seed(ApplicationDbContext context)
             {
@@ -49,6 +49,7 @@ namespace AMUW.Models
                 IdentityResult result = userManager.Create(user, "Amuw2015!");
 
                 userManager.AddToRole(user.Id, "Administrator");
+
                 base.Seed(context);
             }
         }

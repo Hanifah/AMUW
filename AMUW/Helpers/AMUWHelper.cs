@@ -42,8 +42,8 @@ namespace AMUW.Helpers
 
         public string GetEmail(string userId)
         {
-            ApplicationUserManager userManager = new ApplicationUserManager(new UserStore<ApplicationUser>());
-            return userManager.FindById(userId).Email;
+            var user = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+            return user.FindById(userId).Email;
         }
     }
 }

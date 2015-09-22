@@ -11,6 +11,8 @@ namespace AMUW.Data.Installer
             var user = new User();
             user.Username = "Administrator";
             user.UserId = "da7ae7ea-be5b-4c12-98bc-7c78d4665ed0";
+            context.Users.Add(user);
+            context.SaveChanges();
             base.Seed(context);
         }
     }
